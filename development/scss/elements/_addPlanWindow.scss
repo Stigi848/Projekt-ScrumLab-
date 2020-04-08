@@ -1,0 +1,139 @@
+.new-plan-window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: calc(100vw - 240px - 160px);
+    height: calc(100% - 160px);
+    border: 1px #333 dashed;
+    background-color: #fff;
+    padding: 2rem;
+
+    .new-plan-header {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 2.5rem;
+            color: $buttonColor;
+        }
+
+        .close-plan {
+            border: none;
+            box-shadow: none;
+            color: white;
+            background-color: $buttonColor;
+            font-size: 1.5rem;
+            padding: 0.5rem 1.2rem;
+            cursor: pointer;
+        }
+    }
+
+    .head-separator {
+        height: 2px;
+        width: 100%;
+        background-color: $tabDatColor;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .plan-name {
+        padding: 0.5rem;
+        display: flex;
+        color: $sidebarColor;
+
+        label {
+            font-size: 2rem;
+            align-items: center;
+            display: inline-block;
+            margin-right: 2.9rem;
+        }
+
+        input {
+            display: inline-block;
+            height: 2.5rem;
+            width: 70%;
+        }
+    }
+
+    .plan-description {
+        display: flex;
+        padding: 0.5rem;
+        color: $sidebarColor;
+
+        label {
+            font-size: 2rem;
+            align-items: center;
+            display: inline-block;
+            margin-right: 4.9rem;
+        }
+
+        textarea {
+            display: inline-block;
+            width: 70%;
+        }
+
+    }
+
+    .week-number {
+        display: flex;
+        padding: 0.5rem;
+        color: $sidebarColor;
+
+        label {
+            font-size: 2rem;
+            align-items: center;
+            display: inline-block;
+            margin-right: 2rem;
+        }
+
+        input {
+            display: inline-block;
+            height: 2.5rem;
+            width: 3rem;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+
+    .new-plan-table {
+        border-collapse: collapse;
+        margin-top: 1rem;
+        width: 930px;
+        height: 320px;
+        margin-left: 150px;
+
+        th,
+        td {
+            text-align: center;
+            border-top: 1px solid $tabDatColor;
+            border-bottom: 1px solid $tabDatColor;
+            color: $headingColor;
+            font-weight: bold;
+            padding-right: 20px;
+            margin: 3px 0;
+        }
+
+        select {
+            background-color: $backgroundColor;
+            border-color: $tabDatColor;
+            border-radius: 3px;
+            padding: 2px;
+            margin: 2px 5px 3px 8px;
+            width: 150px;
+            text-overflow: hidden;
+            color: $headingColor;
+            text-align: center;
+
+            option {
+                text-overflow: hidden;
+            }
+        }
+
+        .meal {
+            th:first-of-type {
+                border-top: none;
+            }
+        }
+    }
+
+}

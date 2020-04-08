@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext');
+
+
+
+header {
+  font-family: Open Sans;
+  background-color: #4a4a49;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  font-size: 1.0625vw;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.containerHeader {
+  width: 100vw;
+  height: 100px;
+  font-size: 15px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.container{
+  width: 1070px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-family: Charmonman;
+  font-size: 30px;
+  display: flex;
+  padding: 10px;
+  align-self: center;
+}
+
+header h1 span {
+  padding: 0 7px;
+}
+
+#first {
+  font-weight: 100;
+  color: $backgroundColor;
+}
+
+#second {
+  font-weight: 700;
+  color: $buttonColor;
+}
+
+
+ul {
+  color: $backgroundColor;
+  list-style: none;
+  display: inline-block;
+  align-self: center;
+  margin-top: 25px;
+}
+li {
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  padding: 25px;
+
+}
+
+
+ul li {
+  display: inline;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: $backgroundColor;
+  position: relative;
+
+}
+
+ul li a:hover {
+  color: $buttonColor;
+}
+

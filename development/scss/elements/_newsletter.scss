@@ -1,0 +1,36 @@
+.newsletter {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $sidebarColor;
+  color: #EBEBEB;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-head {
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+.newsletter-input {
+  height: 3.8rem;
+  width: 20rem;
+}
+
+.newsletter-submit {
+  color: #EBEBEB;
+  background-color: $buttonColor;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem 2.7rem;
+  margin-left: -8px;
+}

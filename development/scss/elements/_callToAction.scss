@@ -1,0 +1,40 @@
+.call-to-action {
+  background-color: $sidebarColor;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.cta-content {
+  width: 70%;
+}
+
+.cta-header {
+  font-size: 3rem;
+  color: #EBEBEB;
+  font-weight: normal;
+}
+
+.cta-text {
+  font-size: 1.6rem;
+  color: #EBEBEB;
+  margin-top: 3rem;
+}
+
+.cta-button {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #EBEBEB;
+  background-color: $buttonColor;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  margin-left: auto;
+
+}
+
+

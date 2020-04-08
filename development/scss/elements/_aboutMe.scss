@@ -1,0 +1,45 @@
+.container{
+  width: 1070px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+.about_Me {
+  height: 586px;
+  padding: 0;
+  font-size: 1.3rem;
+  background-color: $backgroundColor;}
+
+.about_Me_container {
+  height: 100%;
+  padding-top: calc((586px - 382px) / 2);
+  display: flex;
+
+  }
+
+.about_Me_pic{
+  display: flex;
+  flex: 0 0 auto;
+  width: 364px;
+  height: 382px;
+  background-color: $navColor;
+}
+
+.about_Me_description{
+  flex: 0 1 50%;
+  height: fit-content;
+  color: black;
+}
+a{
+  text-decoration: none;
+}
+h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 0.75em;
+}
+
+p {
+  overflow: hidden;
+  font-weight: 500;
+}

@@ -1,0 +1,214 @@
+.new-recipe-window {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: calc(100vw - 240px - 160px);
+  height: calc(100% - 160px);
+  border: 1px #333 dashed;
+  background-color: #fff;
+  padding: 2rem;
+
+  .new-recipe-header {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-size: 2.5rem;
+      color: $buttonColor;
+    }
+
+    .close-recipe {
+      border: none;
+      box-shadow: none;
+      color: white;
+      background-color: $buttonColor;
+      font-size: 1.5rem;
+      padding: 0.5rem 1.2rem;
+      cursor: pointer;
+    }
+  }
+
+  .head-separator {
+    height: 2px;
+    width: 100%;
+    background-color: $tabDatColor;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .recipe-name {
+    padding: 0.5rem;
+    display: flex;
+    color: $sidebarColor;
+
+    label {
+      font-size: 2.5rem;
+      align-items: center;
+      display: inline-block;
+      margin-right: 2rem;
+    }
+    input {
+        display: inline-block;
+        height: 2.5rem;
+        width: 60%;
+      }
+    }
+
+  .recipe-description {
+    display: flex;
+    padding: 0.5rem;
+    color: $sidebarColor;
+
+    label {
+      font-size: 2.5rem;
+      align-items: center;
+      display: inline-block;
+      margin-right: 4.5rem;
+    }
+    textarea {
+      display: inline-block;
+      width: 60%;
+    }
+
+  }
+  #dish_type{
+    border: 1px solid $tabDatColor;
+    margin-left: 21rem;
+    background-color: $backgroundColor;
+    option{
+      background-color: inherit;
+    }
+  }
+  .recipe-details {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-size: 2.5rem;
+      color: $sidebarColor;
+      font-weight: normal;
+    }
+
+    .detail-separator {
+      height: 2px;
+      width: 100%;
+      background-color: $tabDatColor;
+      margin-bottom: 0.5rem;
+    }
+
+    .recipe-instructions,
+    .recipe-ingredients  {
+      width: 45%;
+    }
+
+    .recipe-instructions {
+      .add-instructions {
+        display: flex;
+        justify-content: space-between;
+
+        textarea {
+          width: 90%;
+          margin-bottom: 3rem;
+        }
+        .add-instruction-btn {
+          box-shadow: none;
+          border: none;
+          background: none;
+          align-self: flex-start;
+        }
+
+        .add-instruction-btn::after {
+          content: "\f0fe";
+          font-family: "Font Awesome 5 Free";
+          font-size: 3rem;
+          font-weight: 900;
+          color: $successColor;
+          top: 0;
+          right: 0;
+        }
+
+
+      }
+      .recipe-ol {
+        margin-left: 2rem;
+        font-size: 1rem;
+
+        li{
+          position: relative;
+        }
+      }
+    }
+
+    .recipe-ingredients {
+      .add-ingredients {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          width: 90%;
+          margin-bottom: 7rem;
+          height: 3rem;
+        }
+
+        .add-ingredient-btn {
+          box-shadow: none;
+          border: none;
+          background: none;
+          align-self: flex-start;
+        }
+
+        .add-ingredient-btn::after {
+          content: "\f0fe";
+          font-family: "Font Awesome 5 Free";
+          font-size: 3rem;
+          font-weight: 900;
+          color: $successColor;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      .recipe-ul {
+        font-size: 1rem;
+
+        li {
+          position: relative;
+        }
+      }
+    }
+
+  }
+  .remove-el-btn {
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-size: 1rem;
+  }
+
+  .remove-el-btn::after {
+    content: '\f2ed';
+    font-family: "Font Awesome 5 Free";
+    margin-left: 0.5rem;
+    color: darkred;
+    display: inline-block;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .edit-el-btn {
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-size: 1rem;
+  }
+
+  .edit-el-btn::after {
+    content: '\f044';
+    font-family: "Font Awesome 5 Free";
+    margin-left: 0.5rem;
+    color: $warningColor;
+    display: inline-block;
+    cursor: pointer;
+
+  }
+
+}

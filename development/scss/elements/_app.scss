@@ -1,0 +1,175 @@
+body {
+    background: url("../images/background.png");
+}
+
+.main-app {
+    display: flex;
+}
+
+.app-header {
+    background-color: #4a4a49;
+    font-family: 'Open Sans';
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    border-bottom: solid 2px #444;
+    h1 {
+        font-family: 'Charmonman';
+        font-weight: 200;
+        span {
+            color: #E58A20;
+        }
+    }
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.profile-el {
+    margin: 0 10px;
+}
+
+.profile-logo::before {
+    content: '\f2bd';
+    display: block;
+    font-weight: 400;
+    font-size: 40px;
+    color: #E58A20;
+    font-family: "Font Awesome 5 Free";
+}
+
+.sidebar {
+    height: calc(100vh - 80px);
+    width: 240px;
+    font-size: 100px;
+    background: $sidebarColor;
+    .sidebar-container {
+        display: flex;
+        flex-direction: column;
+        .app-button {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            padding: 30px 20px;
+            font-size: 20px;
+            font-weight: 400;
+            
+        }
+        .app-button:hover {
+            cursor: pointer;
+            border-left: #E58A20 5px solid;
+            font-weight: 800;
+        }
+        .app-button:hover::after {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            color: #E58A20;
+            display: inline-block;
+
+        } 
+
+        .choosen-button {
+            border-left: #E58A20 5px solid;
+            font-weight: 600;
+        }
+
+        .choosen-button::after {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            color: #E58A20;
+            display: inline-block;
+        }
+    }
+}
+
+.app-section {
+    width: calc(100vw - 240px);
+    height: calc(100vh - 80px);
+    padding: auto;
+}
+
+.recipes, .plans, .hello-section {
+    width: calc(100vw - 240px - 160px);
+    height: calc(100vh - 80px - 80px);
+    margin: 40px 80px;
+    border: 1px #333 dashed;
+    background-color: $backgroundColor;
+    display: none;
+}
+
+.desktop {
+    width: calc(100vw - 240px - 160px);
+    //height: calc(100vh - 80px - 80px);
+    height: calc(100% - 80px);
+    margin: 40px 80px;
+    display: none;
+}
+
+.desktop-content {
+    border: 1px #333 dashed;
+    background-color: #fff;
+    height: 50vh;
+    /* wysokość tego kontenera bedzie trzeba ustalić później przy okazji nadawania contentu */
+
+}
+
+
+// hello app----------------------------------------------
+
+.hello-section {
+    display: flex;
+    min-width: 420px;
+    justify-content: center;
+    
+    .hello-container {
+        width: 400px;
+        margin: 60px auto;
+        color: $headingColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .placeholder {
+                margin-bottom: 10px;
+                padding: 8px 5px 5px 5px;
+                width: 300px;
+                font-size: 16px;
+            }
+            .submit-btn {
+                margin-bottom: 20px;
+                width: 130px;
+                height: 40px;
+                border: none;
+                background-color: $buttonColor;
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+

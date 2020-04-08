@@ -1,0 +1,70 @@
+.features {
+  background-color: #EBEBEB;
+  color: #4a4a49;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  .container {
+    display: flex;
+
+  }
+}
+
+.feature-1,
+.feature-2,
+.feature-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-2 {
+  margin: 0 5.8rem;
+}
+
+.feature-1-head,
+.feature-2-head,
+.feature-3-head {
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+.feature-1-head::before {
+  content: '\f00c';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
+
+}
+
+.feature-2-head::before {
+  content: '\f017';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 6rem;
+  margin-bottom: 3rem;
+}
+
+.feature-3-head::before {
+  content: '\f03a';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-size: 6rem;
+  margin-bottom: 3rem;
+  font-weight: 900;
+
+}
+
+.feature-1-text,
+.feature-2-text,
+.feature-3-text {
+  font-size: 1.5rem;
+  text-align: center;
+
+}
